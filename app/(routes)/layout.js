@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "../_assets/globals.css";
 import Navbar from "../_components/navbar";
+import BentoGrid from "@bentogrid/core";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -25,10 +26,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
-          <Navbar />
-          <main className="container mx-auto pt-20">{children}</main>
-        </div>
+        <Navbar />
+        <main className="w-11/12 mx-auto">{children}</main>
       </body>
     </html>
   );
