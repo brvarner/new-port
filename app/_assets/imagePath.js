@@ -29,4 +29,8 @@ export default {
   bun: require("./logos/bun-logo.svg"),
   api: require("./logos/api-svgrepo-com.svg"),
   express: require("./logos/express-svgrepo-com.svg"),
+  bordu: require("./portfolio/bordu-min.png").default,
+  spotify: require("./portfolio/spotify-min.png").default,
+  oldPortfolio: require("./portfolio/old-min.png").default,
+  weather: require("./portfolio/weather-min.png").default,
 };

@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import imagePath from "../_assets/imagePath";
 import { useState } from "react";
-import ScrollingCarousel from "../_components/carousel";
+import { ScrollingCarousel } from "../_components";
 
 export default function Home() {
   const [isHoveringLinks, setIsHoveringLinks] = useState(false);
   const [isHoveringAbout, setIsHoveringAbout] = useState(false);
 
   return (
-    <div className="grid grid-cols-8 gap-6 w-full rounded-md my-12 grid-flow-dense">
+    <div className="grid grid-cols-8 gap-6 w-full rounded-md my-12 grid-flow-dense sm:flex-col">
       <div
         className="rounded-md border relative min-h-80 grid-flow-dense col-span-8 row-span-2 p-5 sm-w-full bg-teal-700 text-white"
         onMouseEnter={() => setIsHoveringLinks(true)}
@@ -65,12 +65,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="rounded-md border relative min-h-64 grid-flow-dense col-span-2 row-span-8 bg-gradient-to-b from-pink-400 to-pink-600 p-8 text-white">
-        <div
-          className="h-full flex items-center justify-center"
-          onMouseEnter={() => setIsHoveringAbout(true)}
-          onMouseLeave={() => setIsHoveringAbout(false)}
-        >
+      <Link
+        href="/about-me"
+        className="rounded-md border relative min-h-64 grid-flow-dense col-span-2 row-span-8 bg-gradient-to-b from-pink-400 to-pink-600 p-8 text-white"
+        onMouseEnter={() => setIsHoveringAbout(true)}
+        onMouseLeave={() => setIsHoveringAbout(false)}
+      >
+        <div className="h-full flex items-center justify-center">
           {isHoveringAbout ? (
             <p className="text-3xl md:text-5xl font-black text-center">
               Learn More
@@ -86,12 +87,14 @@ export default function Home() {
             </div>
           )}
         </div>
-      </div>
-      <div
-        className="rounded-md border relative min-h-64 grid-flow-dense col-span-6 row-span"
-        style={{ backgroundColor: "#f5f5f5", color: "black" }}
-      >
+      </Link>
+      <div className="rounded-md border relative min-h-64 grid-flow-dense col-span-6 row-span bg-slate-100">
         <ScrollingCarousel />
+      </div>
+      <div className="flex justify-center w-full col-span-6 row-span-4 bg-purple-200 rounded">
+        <h1 className="md:text-7xl sm:text-3xl text-black font-black">
+          Tech Stack
+        </h1>
       </div>
     </div>
   );

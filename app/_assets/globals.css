@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -37,4 +37,13 @@ body {
 
 .animate-scroll {
   animation: scroll 30s linear infinite;
+}
+
+
+.title {
+  background-image: url(https://pixabay.com/get/ga3125bd28c827973233ccc9822f7eb8b9ac69bbe8c5853b3485d714a009160ec78bd7ee1d81dd4d89a5aec9cbbd641fd1df23a81f8fd12cc93fbf8d69b6a61a2ce1403f8f7ec608699643af3b072ff33_640.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }

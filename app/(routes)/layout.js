@@ -1,31 +1,37 @@
 import localFont from "next/font/local";
 import "../_assets/globals.css";
-import Navbar from "../_components/navbar";
-import BentoGrid from "@bentogrid/core";
-
-const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import { Navbar } from "@/app/_components";
 
 export const metadata = {
   title: "Brandon Varner",
   description:
-    "I'm a Next.js, React, Ruby on Rails, Java, and React Native developer! Learn more on my site.",
+    "I'm a Java, C++, Next.js, Ruby on Rails, React, and React Native developer! Learn more on my site.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="../apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../favicon-16x16.png"
+        />
+        <link rel="manifest" href="../site.webmanifest" />
+      </head>
+      <body className={` antialiased`}>
         <Navbar />
         <main className="w-11/12 mx-auto">{children}</main>
       </body>
