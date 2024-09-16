@@ -27,7 +27,7 @@ export default function Contact() {
           For all inquiries, please email:
         </p>
         <Link href="mailto:info@bvarner.dev">
-          <h5 className="title sm:text-4xl md:text-8xl font-black text-center">
+          <h5 className="title sm:text-xl md:text-7xl xl:text-8xl font-black text-center">
             info at bvarner.dev
           </h5>
         </Link>

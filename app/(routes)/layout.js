@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+import "@fontsource-variable/dm-sans";
 import "../_assets/globals.css";
 import { Navbar } from "@/app/_components";
 
