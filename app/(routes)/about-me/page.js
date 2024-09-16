@@ -7,7 +7,7 @@ export default function AboutMe() {
       <PageTitle title="Brandon Varner" />
       <article className="flex flex-col justify-center align-middle">
         <header className="mb-5">
-          <h2 className="sm:text-xl md:text-2xl lg:text-4xl">
+          <h2 className="sm:text-xl md:text-2xl lg:text-4xl text-center">
             Software Engineer and Comms Expert
           </h2>
         </header>
@@ -29,7 +29,8 @@ export default function AboutMe() {
             Illinois's Discovery Partners Institute. During this program, I
             learned Ruby and the Ruby on Rails framework. I've obtained
             certificates in Java, and I've also learned C++ with other
-            technologies.
+            technologies. I love playing video games, and I hope to get into
+            game development in the near future.
           </p>
           <p className="my-3">
             Though I briefly pivoted back to communications out of necessity,
@@ -39,8 +40,7 @@ export default function AboutMe() {
           </p>
           <p className="my-3">
             In my free time, I'm usually hanging out with my wife, Resha, and/or
-            our cat Katsu and our dog Lucky. I love playing video games, and I
-            hope to get into game development in the near future.
+            our cat Katsu and our dog Lucky.
           </p>
           <p className="my-3">
             I'm also a huge football fan. My teams are the Las Vegas Raiders,
@@ -48,7 +48,17 @@ export default function AboutMe() {
             Redblacks.
           </p>
           <div>
-            
+            <h2>Selected Experience</h2>
+            <div>
+              <h3>Software Engineering Apprentice</h3>
+              <h4>Discovery Partners Institute</h4>
+              <h4>May 2024 - August 2024</h4>
+
+              <ol>
+                <li>Test my thing</li>
+                <li>Test my thing</li>
+              </ol>
+            </div>
           </div>
         </main>
       </article>

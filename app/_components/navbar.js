@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [currentHomeEmoji, setCurrentHomeEmoji] = useState("");
 
   const handleResize = () => {
     if (window.innerWidth >= 768) {
@@ -15,6 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    setCurrentHomeEmoji(emojiPicker());
 
     // Clean up the event listener
     return () => {
@@ -41,12 +44,19 @@ export default function Navbar() {
     },
   ];
 
+  const emojis = ["🏠", "🏡", "🏚️", "🛖"];
+
+  const emojiPicker = () => {
+    let emoIndex = Math.floor(Math.random() * emojis.length);
+    return emojis[emoIndex];
+  };
+
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white nav sticky z-40">
       <div>
         <h1 className="text-5xl font-signature ml-2">
           <Link href="/" className="link-underline link-underline-black">
-            Logo
+            {currentHomeEmoji}
           </Link>
         </h1>
       </div>
