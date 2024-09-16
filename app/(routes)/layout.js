@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="manifest" href="../site.webmanifest" />
       </head>
-      <body className={` antialiased`}>
+      <body className={`antialiased`}>
         <Navbar />
         <main className="w-11/12 mx-auto">{children}</main>
       </body>

@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Previous Portfolio",
     desc: `My old 3D rendered portfolio site. Built with three.js and Vite
-                with vanilla JavaScript and CSS for functionality and styling.`,
+                with vanilla JavaScript and CSS.`,
     image: imagePath.oldPortfolio.src,
     url: "https://portfolio-cpr54uw04-brvarners-projects.vercel.app/",
     classes:
@@ -23,9 +23,8 @@ const projects = [
   },
   {
     title: "Spotify Clone",
-    desc: `A small Spotify clone with streaming music sourced from the
-                Internet Archive. Built in React Native with TypeScript and a
-                GraphQL API on AWS Amplify.`,
+    desc: `Built with React Native and TypeScript and a
+                GraphQL API on AWS.`,
     image: imagePath.spotify.src,
     url: "https://github.com/brvarner/spotify-clone/tree/main",
     classes:

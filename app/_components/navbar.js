@@ -58,11 +58,7 @@ export default function Navbar() {
               key={id}
               className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200 link-underline"
             >
-              {id == 4 ? (
-                <Link href="/about-me">{link}</Link>
-              ) : (
-                <Link href={`/${link}`}>{link}</Link>
-              )}
+              <Link href={id == 4 ? "about-me" : `${link}`}>{link}</Link>
             </li>
           ))}
         </ul>
@@ -82,7 +78,10 @@ export default function Navbar() {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              <Link onClick={() => setNav(!nav)} href={`/${link}`}>
+              <Link
+                onClick={() => setNav(!nav)}
+                href={id == 4 ? `/about-me` : `${link}`}
+              >
                 {link}
               </Link>
             </li>

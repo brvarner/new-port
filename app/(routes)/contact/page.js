@@ -17,20 +17,24 @@ export default function Contact() {
     });
   }
 
+  animate();
+
   return (
     <div>
       <PageTitle title="Contact Me" />
       <div className="bg-slate-600 rounded w-5/6 h-64 align-center justify-center flex flex-col align-self-center mx-auto mt-5">
-        <p className="text-center text-2xl mt-5">
+        <p className="text-center sm:text-xl md:text-2xl mt-5">
           For all inquiries, please email:
         </p>
         <Link href="mailto:info@bvarner.dev">
-          <h5 className="title text-8xl font-black text-center">
+          <h5 className="title sm:text-4xl md:text-8xl font-black text-center">
             info at bvarner.dev
           </h5>
         </Link>
+        <p className="text-center sm:text-md md:text-lg mt-5">
+          Don't like the background image? Refresh for a new one!
+        </p>
       </div>
-      <Script src={animate()} />
     </div>
   );
 }
