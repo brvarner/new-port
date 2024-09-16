@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Script from "next/script";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -55,7 +54,7 @@ export default function Navbar() {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white nav sticky z-40">
       <div>
         <h1 className="text-5xl font-signature ml-2">
-          <Link href="/" className="link-underline link-underline-black">
+          <Link href="/" className="link-underline link-underline-black bg-teal-700 rounded border-white border">
             {currentHomeEmoji}
           </Link>
         </h1>
@@ -90,7 +89,7 @@ export default function Navbar() {
             >
               <Link
                 onClick={() => setNav(!nav)}
-                href={id == 4 ? `/about-me` : `${link}`}
+                href={id == 4 ? `about-me` : `${link}`}
               >
                 {link}
               </Link>

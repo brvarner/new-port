@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-8 gap-6 w-full rounded-md my-12 grid-flow-dense sm:flex-col">
       <div
-        className="rounded-md border relative min-h-80 grid-flow-dense col-span-8 row-span-2 p-5 sm-w-full bg-teal-700 text-white"
+        className="rounded-md border relative min-h-80 grid-flow-dense col-span-8 row-span-2 p-5 sm-w-full bg-teal-700 text-white drop-shadow-2xl"
         onMouseEnter={() => setIsHoveringLinks(true)}
         onMouseLeave={() => setIsHoveringLinks(false)}
       >
@@ -34,7 +34,7 @@ export default function Home() {
               }
               width={isHoveringLinks ? 128 : 150}
               height={isHoveringLinks ? 128 : 150}
-              className="rounded-full bg-slate-700"
+              className="rounded-full bg-slate-700 drop-shadow-lg"
             />
           </div>
           <div className="flex space-x-4 mt-4">
