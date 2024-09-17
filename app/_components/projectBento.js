@@ -15,11 +15,11 @@ export default function ProjectBento({ title, desc, image, url, classes }) {
     >
       <div>
         <div className="absolute inset-0 bg-black bg-opacity-75 flex items-center justify-center">
-          <div className="text-center text-white w-11/12 mx-auto hover:animate-bounce">
-            <h3 className="text-white sm:text-lg md:text-5xl font-bold mb-4 ">
+          <div className="text-center text-white w-auto hover:animate-bounce">
+            <h3 className="text-white text-lg md:text-4xl font-bold lg:mb-4">
               {title}
             </h3>
-            <p className="sm:text-sm md:text-lg">{desc}</p>
+            <p className="text-sm md:text-lg">{desc}</p>
           </div>
         </div>
       </div>

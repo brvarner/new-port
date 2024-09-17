@@ -17,14 +17,17 @@ export default function Home() {
         onMouseEnter={() => setIsHoveringLinks(true)}
         onMouseLeave={() => setIsHoveringLinks(false)}
       >
-        <p className="text-xl md:text-2xl font-bold text-white">
-          // Hello, my name is
-        </p>
-        <h1 className="text-4xl md:text-6xl font-black mt-2 text-white">
-          Brandon Varner
-        </h1>
-        <div className="flex flex-row justify-between align-middle items-center p-8">
-          <div className="mt-8 relative">
+        <div className="flex flex-row bg-red-500 justify-between align-middle p-8">
+          <div>
+            <p className="sm:text-xl md:text-2xl font-bold text-white">
+              // Hello, my name is
+            </p>
+            <h1 className="sm:text-4xl md:text-6xl font-black mt-2 text-white">
+              Brandon Varner
+            </h1>
+          </div>
+          <div className="mt-8 relative"></div>
+          <div className="flex space-x-4 mt-4">
             <Image
               src={isHoveringLinks ? imagePath.cartoon : imagePath.headshot}
               alt={
@@ -32,36 +35,10 @@ export default function Home() {
                   ? "A cartoon rendering of Brandon Varner's head"
                   : "Brandon Varner's headshot"
               }
-              width={isHoveringLinks ? 128 : 150}
-              height={isHoveringLinks ? 128 : 150}
+              width={isHoveringLinks ? 214 : 250}
+              height={isHoveringLinks ? 214 : 250}
               className="rounded-full bg-slate-700 drop-shadow-lg"
             />
-          </div>
-          <div className="flex space-x-4 mt-4">
-            <Link
-              href="https://github.com/brvarner"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={imagePath.github}
-                alt="GitHub logo"
-                width={125}
-                height={125}
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/brandonvarneral/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src={imagePath.linkedIn}
-                alt="LinkedIn logo"
-                width={125}
-                height={125}
-              />
-            </Link>
           </div>
         </div>
       </div>
@@ -73,13 +50,13 @@ export default function Home() {
       >
         <div className="h-full flex items-center justify-center">
           {isHoveringAbout ? (
-            <p className="text-3xl md:text-5xl font-black text-center">
+            <p className="text-2xl md:text-5xl font-black text-center">
               Learn More
             </p>
           ) : (
             <div>
-              <h3 className="text-2xl font-bold mb-2">About Me:</h3>
-              <p className="text-lg md:text-base">
+              <h3 className="sm:text-xl text-2xl font-bold mb-2">About Me:</h3>
+              <p className="text-sm md:text-base">
                 I'm a software developer and communications expert from
                 Birmingham, AL. I've been developing for 3 years now, and I've
                 been writing professionally for almost a decade.
