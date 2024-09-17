@@ -20,7 +20,6 @@ export default function Navbar() {
     window.addEventListener("resize", handleResize);
     setCurrentHomeEmoji(emojiPicker());
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -63,7 +62,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="border-b-slate-400 border-2 flex justify-between items-center w-full h-20 px-4 text-white nav sticky z-40">
+    <div className="border-b-slate-400 border-b-2 flex justify-between items-center w-full h-20 px-4 text-white nav sticky z-40">
       <div>
         <h1 className="font-signature ml-2">
           <Link
@@ -80,12 +79,18 @@ export default function Navbar() {
           {links.map(({ id, link, img }) => (
             <li
               key={id}
-              className="nav-links px-4 cursor-pointer capitalize font-medium linkText hover:scale-105 hover:text-white duration-200 link-underline"
+              className="nav-links px-4 cursor-pointer capitalize font-medium linkText hover:scale-105 hover:text-slate-400 duration-200 link-underline"
             >
               {id <= 4 ? (
                 <Link href={id == 4 ? "about-me" : `${link}`}>{link}</Link>
               ) : (
-                <ImgLink url={link} img={img} />
+                <ImgLink
+                  url={link}
+                  img={img}
+                  height={25}
+                  width={25}
+                  alt={id == 5 ? "The Github logo" : "The LinkedIn logo"}
+                />
               )}
             </li>
           ))}
@@ -114,7 +119,15 @@ export default function Navbar() {
                   {link}
                 </Link>
               ) : (
-                <ImgLink nav={nav} setNav={setNav} url={link} img={img} />
+                <ImgLink
+                  nav={nav}
+                  setNav={setNav}
+                  url={link}
+                  img={img}
+                  height={50}
+                  width={50}
+                  alt={id == 5 ? "The Github logo" : "The LinkedIn logo"}
+                />
               )}
             </li>
           ))}

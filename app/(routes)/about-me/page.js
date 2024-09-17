@@ -5,7 +5,7 @@ import { technologies } from "@/app/_components/technologies";
 
 export default function AboutMe() {
   return (
-    <div className>
+    <div>
       <PageTitle title="Brandon Varner" />
       <article className="flex flex-col justify-center align-middle">
         <header className="mb-5">

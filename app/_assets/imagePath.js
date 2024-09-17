@@ -1,6 +1,6 @@
 export default {
-  github: require("./brands/github-mark-white.svg"),
-  linkedIn: require("./brands/image2vector.svg"),
+  github: require("./logos/github-mark-white.svg"),
+  linkedIn: require("./logos/icons8-linkedin.svg"),
   cartoon: require("./headshots/cartoonBrandon.png"),
   headshot: require("./headshots/Brandon(1)(1).png"),
   java: require("./logos/java-seeklogo.svg"),
@@ -29,6 +29,7 @@ export default {
   bun: require("./logos/bun-logo.svg"),
   api: require("./logos/api-svgrepo-com.svg"),
   express: require("./logos/express-svgrepo-com.svg"),
+  threejs: require("./logos/Three.js_Icon.svg"),
   bordu: require("./portfolio/bordu-min.png").default,
   spotify: require("./portfolio/spotify-min.png").default,
   oldPortfolio: require("./portfolio/old-min.png").default,
