@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-8 gap-6 w-full rounded-md my-12">
       <div
-        className="rounded-md border relative min-h-80 p-5 bg-teal-700 text-white drop-shadow-2xl col-span-1 md:col-span-8"
+        className="rounded-md border relative min-h-80 p-5 blurred-bento text-white drop-shadow-2xl col-span-1 md:col-span-8"
         onMouseEnter={() => setIsHoveringLinks(true)}
         onMouseLeave={() => setIsHoveringLinks(false)}
       >
@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="flex mt-4">
+          <div className="flex mt-4 max-h-60">
             <Image
               src={isHoveringLinks ? imagePath.cartoon : imagePath.headshot}
               alt={
@@ -35,9 +35,9 @@ export default function Home() {
                   ? "A cartoon rendering of Brandon Varner's head"
                   : "Brandon Varner's headshot"
               }
-              width={isHoveringLinks ? 214 : 250}
-              height={isHoveringLinks ? 214 : 250}
-              className="rounded-full bg-slate-700 drop-shadow-lg"
+              width={250}
+              height={250}
+              className="rounded-full bg-slate-700 drop-shadow-lg object-cover"
             />
           </div>
         </div>
@@ -67,9 +67,7 @@ export default function Home() {
       </Link>
       <div className="rounded-md border relative min-h-64 bg-slate-100 col-span-1 md:col-span-6">
         <ScrollingCarousel />
-      </div>
-      <div className="flex justify-center w-full col-span-1 md:col-span-6 bg-purple-200 rounded">
-        <h1 className="text-3xl md:text-7xl text-black font-black">
+        <h1 className="text-3xl md:text-7xl text-black font-black text-center">
           Tech Stack
         </h1>
       </div>

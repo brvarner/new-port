@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Job({ title, company, dates, points }) {
+export default function Job({ title, company, dates, points, index }) {
   return (
     <div className="my-3">
       <h3 className="font-semibold text-2xl">{title}</h3>
@@ -12,7 +12,7 @@ export default function Job({ title, company, dates, points }) {
           <li key={index}>{point}</li>
         ))}
       </ul>
-      <hr className="mt-5" />
+      {index == 3 ? null : <hr className="mt-5" />}
     </div>
   );
 }

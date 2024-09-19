@@ -26,6 +26,6 @@ export const technologies = [
   { tech: "Firebase", image: imagePath.firebase },
   { tech: "RESTful APIs", image: imagePath.api },
   { tech: "Git", image: imagePath.git },
-  { tech: "Visual Studio Code", image: imagePath.vscode },
+  { tech: "VS Code", image: imagePath.vscode },
   { tech: "Linux", image: imagePath.linux },
 ];

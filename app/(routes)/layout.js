@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`subpixel-antialiased`}>
         <Navbar />
-        <main className="w-11/12 mx-auto">{children}</main>
+        <main className="w-11/12 m-auto">{children}</main>
       </body>
     </html>
   );
