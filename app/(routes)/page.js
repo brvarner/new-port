@@ -20,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center p-8">
           <div>
             <p className="text-xl md:text-2xl font-bold text-white">
-              // Hello, my name is
+              {`//`}Hello, my name is
             </p>
             <h1 className="text-4xl md:text-6xl font-black mt-2 text-white">
               Brandon Varner
