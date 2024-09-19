@@ -10,14 +10,10 @@ export default function Contact() {
   gsap.registerPlugin(useGSAP);
   const container = useRef();
 
-  function animate() {
-    useGSAP(() => {
-      var tl = gsap.timeline({ repeat: -1 });
-      tl.to("h5", 30, { backgroundPosition: "-960px 0" }, { scope: container });
-    });
-  }
-
-  animate();
+  useGSAP(() => {
+    var tl = gsap.timeline({ repeat: -1 });
+    tl.to("h5", 30, { backgroundPosition: "-960px 0" }, { scope: container });
+  });
 
   return (
     <div>
