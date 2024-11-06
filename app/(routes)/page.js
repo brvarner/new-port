@@ -25,6 +25,9 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-black mt-2 text-white">
               Brandon Varner
             </h1>
+            <h4 className="text-lg md:text-xl font-bold mt-1 text-white">
+              Software Engineer and Communications Expert
+            </h4>
           </div>
 
           <div className="flex mt-4 max-h-60">
