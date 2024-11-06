@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <div>
-      <PageTitle title="Contact Me" className="title" />
+      <PageTitle title="Contact Me" classes="title" />
       <div className="bg-slate-600 rounded w-5/6 h-64 align-center justify-center flex flex-col align-self-center mx-auto mt-5">
         <p className="text-center sm:text-xl md:text-2xl mt-5">
           For all inquiries, please email:
