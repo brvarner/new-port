@@ -12,24 +12,21 @@ export default function Contact() {
 
   useGSAP(() => {
     var tl = gsap.timeline({ repeat: -1 });
-    tl.to("h5", 30, { backgroundPosition: "-960px 0" }, { scope: container });
+    tl.to("h2", 30, { backgroundPosition: "-960px 0" }, { scope: container });
   });
 
   return (
     <div>
-      <PageTitle title="Contact Me" />
+      <PageTitle title="Contact Me" className="title" />
       <div className="bg-slate-600 rounded w-5/6 h-64 align-center justify-center flex flex-col align-self-center mx-auto mt-5">
         <p className="text-center sm:text-xl md:text-2xl mt-5">
           For all inquiries, please email:
         </p>
         <Link href="mailto:info@bvarner.dev">
-          <h5 className="title text-4xl md:text-7xl xl:text-8xl font-black text-center">
+          <h5 className="text-4xl md:text-7xl xl:text-8xl font-black text-center">
             info at bvarner.dev
           </h5>
         </Link>
-        <p className="text-center sm:text-md md:text-lg mt-5">
-          Don't like the background image? Refresh for a new one!
-        </p>
       </div>
     </div>
   );
