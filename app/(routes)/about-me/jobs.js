@@ -1,6 +1,6 @@
 export const jobs = [
   {
-    title: "Founder/CEO/Engineer",
+    title: "Founder/Engineer",
     company: "Bordu",
     dates: "August 2024 - Present",
     points: [
@@ -11,7 +11,7 @@ export const jobs = [
   {
     title: "Software Engineering Apprentice",
     company: "Discovery Partners Institute",
-    dates: "May 2024 - August 2024",
+    dates: "2024",
     points: [
       "Refreshed my skills with SQL, HTML, CSS, and JavaScript while learning new skills including Ruby on Rails.",
       "Helped classmates find solutions to coding and non-coding problems dozens of times.",
@@ -22,7 +22,7 @@ export const jobs = [
   {
     title: "Senior Communications and Marketing Associate",
     company: "Spanish Coalition for Housing (SCH)",
-    dates: "July 2023 - May 2024",
+    dates: "2023 - 2024",
     points: [
       "Led a four-person team in publicizing the organization’s community efforts.",
       "Started a blog that informed the public of our actions and increased site traffic by 10%.",
@@ -32,7 +32,7 @@ export const jobs = [
   {
     title: "Founding Engineer",
     company: "BUZD!",
-    dates: "February 2022 - September 2022",
+    dates: "2021 - 2022",
     points: [
       `Created a driver’s-side delivery app singlehandedly using React Native which enabled the business to earn over
   $50,000 in its lifetime.`,

@@ -5,7 +5,7 @@ import { Navbar } from "@/app/_components";
 export const metadata = {
   title: "Brandon Varner",
   description:
-    "I'm a Java, C++, Next.js, Ruby on Rails, React, and React Native developer! Learn more on my site.",
+    "I'm a Java, C++, C#, Next.js, Ruby on Rails, React, and React Native developer! Learn more on my site.",
 };
 
 export default function RootLayout({ children }) {
