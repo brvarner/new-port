@@ -8,6 +8,14 @@ const nextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: "/pico-games/:path*.html",
+        destination: "/pico-games/:path*.html",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
