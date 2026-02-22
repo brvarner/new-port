@@ -44,11 +44,15 @@ export default function Navbar() {
     },
     {
       id: 5,
+      link: "arcade",
+    },
+    {
+      id: 6,
       link: "https://github.com/brvarner",
       img: imagePath.github,
     },
     {
-      id: 6,
+      id: 7,
       link: "https://www.linkedin.com/in/brandonvarneral/",
       img: imagePath.linkedIn,
     },
@@ -81,7 +85,7 @@ export default function Navbar() {
               key={id}
               className="nav-links px-4 cursor-pointer capitalize font-medium linkText hover:scale-105 hover:text-slate-400 duration-200 link-underline"
             >
-              {id <= 4 ? (
+              {id <= 5 ? (
                 <Link href={id == 4 ? "about-me" : `${link}`}>{link}</Link>
               ) : (
                 <ImgLink
@@ -89,7 +93,7 @@ export default function Navbar() {
                   img={img}
                   height={25}
                   width={25}
-                  alt={id == 5 ? "The Github logo" : "The LinkedIn logo"}
+                  alt={id == 6 ? "The Github logo" : "The LinkedIn logo"}
                 />
               )}
             </li>

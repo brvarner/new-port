@@ -1,11 +1,13 @@
 export const jobs = [
   {
-    title: "Founder/Engineer",
-    company: "Bordu",
-    dates: "August 2024 - Present",
+    title: "Sales Engineer",
+    company: "Linq",
+    dates: "2025 - 2026",
     points: [
-      "Created an efficient communication tool to help users break the email chain.",
-      "Built with Ruby on Rails, JavaScript, and Bootstrap for easy spin-up and maintenance.",
+      "Worked closely with sales team to secure over a million dollars in new revenue",
+      "Shipped dozens of new features and bug fixes into the codebase using Ruby on Rails, Go, React Native, and more",
+      "Built accurate API documentation on sending iMessage at an enterprise scale",
+      "Assisted hundreds of customers with troubleshooting and building their own enterprise level applications",
     ],
   },
   {

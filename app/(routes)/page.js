@@ -5,6 +5,7 @@ import Link from "next/link";
 import imagePath from "../_assets/imagePath";
 import { useState } from "react";
 import { ScrollingCarousel } from "../_components";
+import { yearWord } from "../_components/years";
 
 export default function Home() {
   const [isHoveringLinks, setIsHoveringLinks] = useState(false);
@@ -61,8 +62,8 @@ export default function Home() {
               <h3 className="text-xl md:text-2xl font-bold mb-2">About Me:</h3>
               <p className="text-sm md:text-base">
                 I'm a software developer and communications expert from
-                Birmingham, AL. I've been developing for 3 years now, and I've
-                been writing professionally for almost a decade.
+                Birmingham, AL. I've been developing for {yearWord} years now,
+                and I've been writing professionally for almost a decade.
               </p>
             </div>
           )}
