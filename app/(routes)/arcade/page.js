@@ -1,23 +1,7 @@
 "use client";
 
 import { PageTitle } from "@/app/_components";
-import React, { memo } from "react";
-import Pico8 from "react-pico-8";
-
-const StablePico8 = memo(() => (
-  <Pico8
-    src="/pico-games/space/game.js"
-    placeholder="/pico-games/space/game.map.png"
-    autoPlay={false}
-    legacyButtons={false}
-    hideCursor={true}
-    center={true}
-    blockKeys={true}
-    usePointer={true}
-  />
-));
-
-StablePico8.displayName = "StablePico8";
+import React from "react";
 
 export default function Arcade() {
   return (
