@@ -8,7 +8,7 @@ const projects = [
                 users and provides updates on tasks. Built with Ruby on Rails
                 with Bootstrap and some front-end JavaScript.`,
     image: imagePath.bordu.src,
-    url: "https://bordu.vip",
+    url: "https://bordu.onrender.com",
     classes:
       "rounded-md z-0 border relative min-h-96 grid-flow-dense col-span-8 row-span-3",
   },
