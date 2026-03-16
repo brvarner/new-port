@@ -2,29 +2,29 @@ export const jobs = [
   {
     title: "Sales Engineer",
     company: "Linq",
-    dates: "2025 - 2026",
+    dates: "September 2025 - February 2026",
     points: [
-      "Worked closely with sales team to secure over a million dollars in new revenue",
-      "Shipped dozens of new features and bug fixes into the codebase using Ruby on Rails, Go, React Native, and more",
-      "Built accurate API documentation on sending iMessage at an enterprise scale",
-      "Assisted hundreds of customers with troubleshooting and building their own enterprise level applications",
+      "Led delivery of 40+ features and bug fixes across Ruby on Rails, Go, and React Native codebases in a fast-paced production environment.",
+      "Built Grafana dashboards and automated Bash-generated Terraform configurations to monitor enterprise deployments, identify bottlenecks, standardize infrastructure setup, and reduce manual engineering effort across implementation and support workflows.",
+      "Served as a trusted technical advisor to 100+ enterprise clients, guiding API integration strategy, translating constraints around authentication, data handling, and dependencies into practical recommendations, and unblocking application builds and integrations.",
+      "Authored enterprise API documentation for large-scale iMessage delivery, shaping customer success and internal technical enablement.",
+      "Partnered with sales and technical stakeholders on solution design, demos, and implementation strategy supporting $1M+ in new revenue.",
     ],
   },
   {
-    title: "Software Engineering Apprentice",
+    title: "Software Engineer",
     company: "Discovery Partners Institute",
-    dates: "2024",
+    dates: "May 2024 - August 2024",
     points: [
-      "Refreshed my skills with SQL, HTML, CSS, and JavaScript while learning new skills including Ruby on Rails.",
-      "Helped classmates find solutions to coding and non-coding problems dozens of times.",
-      "Networked with multiple Fortune 500 executives and learned about the business side of software development.",
-      "Built a Rails app throughout the Software Development Life Cycle with dozens of independent users.",
+      "Owned end-to-end development of a full-stack Ruby on Rails application across the full SDLC, from PostgreSQL data modeling and REST API development to testing and final delivery.",
+      "Drove iteration and application quality by translating feedback from 20+ independent testers into product improvements.",
+      "Delivered full-stack application features across SQL, JavaScript, HTML, and CSS in support of a production Ruby on Rails application.",
     ],
   },
   {
     title: "Senior Communications and Marketing Associate",
     company: "Spanish Coalition for Housing (SCH)",
-    dates: "2023 - 2024",
+    dates: "July 2023 - May 2024",
     points: [
       "Led a four-person team in publicizing the organization’s community efforts.",
       "Started a blog that informed the public of our actions and increased site traffic by 10%.",
@@ -36,12 +36,11 @@ export const jobs = [
     company: "BUZD!",
     dates: "2021 - 2022",
     points: [
-      `Created a driver’s-side delivery app singlehandedly using React Native which enabled the business to earn over
-  $50,000 in its lifetime.`,
-      `Constructed an administrative website using Next.js that allowed staff to manage inventory, orders, and
-  customers, increasing efficiency by 75%.`,
-      `Collaborated with a team of two other developers to make crucial elements of a customer-facing app, including
-  product displays and an advertising carousel, increasing advertising options 5x.`,
+      `Built and launched a React Native driver delivery application that generated more than $50,000 in revenue, translating business needs into a working customer-facing product that streamlined driver workflows and order fulfillment.`,
+      `Built a Next.js and Firebase administrative platform for managing inventory, orders, and customers, improving staff efficiency by 75%.`,
+      `Implemented real-time driver tracking using the Google Maps API, enabling live delivery visibility for dispatchers and customers.`,
+      `Served as the technical bridge between engineering and business stakeholders, translating product requirements into development plans, shaping feature scope, and communicating technical constraints in accessible terms.`,
+      `Delivered revenue-driving customer-facing React Native functionality that expanded advertising inventory by 5x, while proactively prototyping features ahead of formal requests to accelerate product development.`,
     ],
   },
 ];
