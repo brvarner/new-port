@@ -45,4 +45,5 @@ export default {
   langchain: require("./logos/LangChain_Logo.svg"),
   terraform: require("./logos/terraform-svgrepo-com.svg"),
   mongodb: require("./logos/MongoDB_Logo.svg"),
+  python: require("./logos/python-logo-only.svg")
 };
